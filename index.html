@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Meeting Minutes">
+    <title>Meeting Minutes</title>
+    <link rel="icon" href="/assets/favicon.ico">
+  </head>
+  <body>
+    <header>
+    <h1>Meeting Minutes</h1>
+    <nav>
+        <a href="#attendance">Attendance</a> 
+      </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Date</h2>
+            <p><strong>April 7, 2026</strong></p>
+            <hr> 
+        </section>
+        <section id="attendance">
+            <h2>Attendance</h2>
+            <ul> <!-- ul requirement -->
+              <li><b>Sophie</b></li> <!-- li + b -->
+              <li><i>Thomas</i></li> <!-- i -->
+              <li><em>Elena</em></li> <!-- em -->
+            </ul>
+        </section>
+        <section>
+            <h2>Agenda</h2>
+            <ol> <!-- ol requirement -->
+              <li>Brainstorming</li>
+              <li>Check ins</li>
+              <li>Documentation</li>
+            </ol>
+          </section>
+          <section>
+            <h3>Notes</h3> <!-- h3 requirement -->
+            <div>
+              <p>This are the updated <span>notes</span>.</p>
+            </div>
+          </section>
+
+          <section>
+            <p>Important Info:<br>Next event will be held in 2 weeks.</p> <!-- br requirement -->
+          </section>
+          <section>
+            <details>
+              <summary>More Info</summary>
+              <p>Reach out to the event management teams.</p>
+            </details>
+          </section>
+
+          <section>
+            <img src="/assets/image.png" alt="diagram" width="300" height="200"> <!-- img requirement -->
+      
+            <audio controls> <!-- audio requirement -->
+              <source src="/assets/audio.mp3" type="audio/mpeg">
+            </audio>
+      
+            <video controls width="200"> <!-- video requirement -->
+              <source src="/assets/video.mp4" type="video/mp4">
+            </video>
+          </section>
+
+          <section>
+            <form>
+              <fieldset>
+                <legend>Event Registration</legend>
+          
+                <!-- text input -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name">
+          
+                <br><br>
+          
+                <!-- date input -->
+                <label for="date">Event Date:</label>
+                <input type="date" id="date" name="date">
+          
+                <br><br>
+          
+                <!-- checkbox -->
+                <label>
+                  <input type="checkbox" name="check">
+                  I need special accommodations
+                </label>
+          
+                <br><br>
+          
+                <!-- radio -->
+                <p>Ticket Type:</p>
+                <label>
+                  <input type="radio" name="radio" value="general">
+                  General Admission
+                </label>
+                <label>
+                  <input type="radio" name="radio" value="vip">
+                  VIP
+                </label>
+          
+                <br><br>
+          
+                <!-- textarea -->
+                <label for="comments">Additional Comments:</label><br>
+                <textarea id="comments" name="comments"></textarea>
+          
+                <br><br>
+          
+                <!-- datalist -->
+                <label for="event-type">Event Type:</label>
+                <input list="options" id="event-type" name="event-type">
+                <datalist id="options">
+                  <option value="Hackathon">
+                  <option value="CSE advising">
+                  <option value="Networking Event">
+                </datalist>
+          
+                <br><br>
+          
+                <!-- select + option -->
+                <label for="food">Meal Preference:</label>
+                <select id="food" name="food">
+                  <option>Vegetarian</option>
+                  <option>Non-Vegetarian</option>
+                </select>
+          
+                <br><br>
+          
+                <!-- button -->
+                <button type="submit">Register</button>
+          
+              </fieldset>
+            </form>
+          </section>
+    </main>
+    <footer>
+        <p>--Footer--</p>
+      </footer>
+  </body>
+</html>
