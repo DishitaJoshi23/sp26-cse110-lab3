@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-https://dishitajoshi23.github.io/Lab2/
+#Lab 3 website link:
+https://DishitaJoshi23.github.io/sp26-cse110-lab3/
