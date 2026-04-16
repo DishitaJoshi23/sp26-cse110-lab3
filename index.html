@@ -5,6 +5,18 @@
     <meta name="description" content="Meeting Minutes">
     <title>Meeting Minutes</title>
     <link rel="icon" href="assets/favicon.ico">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Internal CSS -->
+    <style>
+    h1 {
+      text-decoration: underline;
+    }
+    </style>
   </head>
   <body>
     <header>
@@ -15,12 +27,12 @@
     </header>
 
     <main>
-        <section>
-            <h2>Date</h2>
+        <section class="card">
+            <h2 style="color: rgb(64, 42, 207);">Date</h2>
             <p><strong>April 8, 2026</strong></p>
             <hr> 
         </section>
-        <section id="attendance">
+        <section id="attendance" class= "card">
             <h2>Attendance</h2>
             <ul> <!-- ul requirement -->
               <li><b>Sophie</b></li> <!-- li + b -->
@@ -137,7 +149,7 @@
             </form>
           </div>
     </main>
-    <footer>
+    <footer id="footer">
         <p>--Footer--</p>
       </footer>
   </body>
