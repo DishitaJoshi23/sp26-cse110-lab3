@@ -1,0 +1,186 @@
+/* VARIABLES*/
+:root {
+    --main-color: rgb(64, 42, 207);
+  }
+  
+  /* UNIVERSAL SELECTOR */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* BODY + COLORS (multiple types) */
+  body {
+    font-family: "Poppins", sans-serif;
+  
+    /* fallback variable */
+    color: var(--main-color, blue);
+    padding: 50px;
+    background-color: hsl(210, 50%, 96%);
+  }
+  
+  /* hex color example */
+  h1 {
+    color: #333333;
+    text-decoration: underline;
+  }
+  
+  /* color name */
+  h2 {
+    color: blue;
+  }
+  
+  /* wider gamut */
+  h3 {
+    color: color(display-p3 0.2 0.2 0.8);
+  }
+  
+  /* color-mix */
+  p {
+    color: color-mix(in srgb, red 40%, blue 60%);
+  }
+  
+  /* CLASS SELECTOR */
+  .card {
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--main-color);
+  
+    /* LONGHAND */
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+  
+    /* SHORTHAND */
+    padding: 10px 15px 10px 15px;
+  
+    background-color: white;
+  }
+  
+  /* ID SELECTOR */
+  #attendance {
+    position: relative;
+  }
+  
+  /* ATTRIBUTE SELECTOR */
+  img[alt="diagram"] {
+    width: 10cm; /* absolute unit */
+    border: 3pt dashed black;
+  }
+  
+  /* DISPLAY (ALL REQUIRED TYPES) */
+  ul {
+    display: block;
+  }
+  
+  li {
+    display: list-item;
+  }
+  
+  span {
+    display: inline;
+  }
+  
+  details {
+    display: none;
+  }
+  
+  /* SIZING */
+  video {
+    width: 200px;
+    height: 150px;
+    max-width: 50%;
+    min-width: 120px;
+  }
+  
+  /* POSITION */
+  header {
+    position: static;
+  }
+  
+  #footer {
+    position: fixed;
+    bottom: 0;
+  }
+  
+  /* sticky already required */
+  nav {
+    position: sticky;
+    top: 0;
+  }
+  
+  /* TEXT STYLING */
+  h1, h2, h3 {
+    text-align: left;
+    text-decoration: underline;
+  }
+  
+  /*  PSEUDO CLASS */
+  nav a:hover {
+    color: red;
+  }
+  
+  nav a:active {
+    color: green;
+  }
+  
+  /* FLEXBOX */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+  }
+  
+  /* GRID */
+  form fieldset {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+  
+  /* COMBINATORS */
+  
+  /* descendant */
+  header h1 {
+    letter-spacing: 2px;
+  }
+  
+  /* child */
+  form > fieldset {
+    border: 2px solid black;
+  }
+  
+  /* adjacent sibling */
+  h2 + ul {
+    background-color: lightgray;
+  }
+  
+  /* general sibling */
+  h2 ~ ol {
+    background-color: #f5f5f5;
+  }
+  
+  /* COMBINING SELECTORS */
+  p.note {
+    font-weight: bold;
+  }
+  
+  /* :has() */
+  section:has(ul) {
+    border: 2px solid red;
+  }
+  
+  /* NESTED SELECTOR (2023)*/
+  header {
+    & nav {
+      font-size: 14px;
+    }
+  }
+  
+  /* MEDIA QUERY */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  }
